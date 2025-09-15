@@ -1,0 +1,6 @@
+button {
+    border-left: 6px solid purple;
+    border-top: 3px solid red;
+    border-right: 4px dotted green;
+    border-bottom: 3px double green;
+} 
