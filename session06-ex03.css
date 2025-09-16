@@ -1,0 +1,123 @@
+
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+/* Thanh menu */
+header {
+  background: #222;
+  padding: 10px 0;
+  position: sticky;   /* Dính trên đầu */
+  
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: 30px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Phần giới thiệu */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background: white;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.intro h1 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #111;
+}
+
+/* Phần dự án */
+#projects {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project {
+  background: #333;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.project:hover {
+  background: #ff9800;
+  transform: translateY(-5px);
+}
+
+/* Phần liên hệ */
+#contact {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #00bcd4;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #ff9800;
+}
