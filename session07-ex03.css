@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;        
+  width: 460px;          
+  gap: 20px;    
+  border: 3px solid #333;      
+  padding: 5px;   
+  background: white;
+}
+
+.flex-item {
+  background-color: #2ecc71;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 3px;
+  width: calc(25% - 20px);
+  height: 50px;
+           
+}
+
+.large {
+    width: calc(45% + 10px);
+}
