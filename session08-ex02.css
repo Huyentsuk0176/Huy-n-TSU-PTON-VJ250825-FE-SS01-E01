@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.flex-item {
+    background-color: #e57373;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    flex: 1 calc(25% - 10px);
+}
+@media (max-width: 1024px ) {
+.flex-item{
+    flex: 1 calc(50% - 10px);
+}
+}
+@media (max-width:768px) {
+    .flex-item {
+        flex: 1 calc(100% - 10px)
+    }
+}
