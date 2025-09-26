@@ -1,0 +1,172 @@
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.button {
+  display: block;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: #333;
+}
+.categories {
+  list-style: none;
+  margin: 0;
+  padding:16px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn.primary {
+  background: orange;
+  color: #fff;
+}
+
+.btn.secondary {
+  color: #333;
+  text-decoration: none;
+  
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.hero-left {
+  position: relative;
+  display: inline-block;
+}
+.hero-left img {
+  width: 350px;
+  border-radius: 12px;
+  display: block;
+}
+
+
+
+
+.hero-right h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-right p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn.primary {
+  background: orange;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid orange;
+  color: orange;
+}
+
+.stats {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.stats span {
+  margin-right: 20px;
+}
+
+/* Popular Courses */
+.popular {
+  padding: 60px;
+  background: #fafafa;
+}
+
+.popular h2 {
+  margin-bottom: 10px;
+}
+
+.popular p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.course-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.course-list img {
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .hero-right h1 {
+    font-size: 28px;
+  }
+
+  .course-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
