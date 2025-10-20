@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Management - CRUD + Local Storage</title>
+  <style>
+    body {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        margin: 40px auto;
+        width: 90%;
+        max-width: 900px;
+        background-color: #f6f7fb;
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    form {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    input, select, button {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .edit-btn {
+      background-color: #ffa500;
+    }
+
+    .delete-btn {
+      background-color: #f44336;
+    }
+
+    .edit-btn:hover {
+      background-color: #e69500;
+    }
+
+    .delete-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <h2>Task Management</h2>
+
+  <form id="taskForm">
+    <input type="hidden" id="taskId" />
+    <input type="text" id="content" placeholder="Content" required />
+    <input type="date" id="dueDate" required />
+    <select id="status">
+      <option value="Pending">Pending</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Done">Done</option>
+    </select>
+    <input type="text" id="assignedTo" placeholder="Assigned to" required />
+    <button type="submit">Save Task</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Content</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Assigned To</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="taskTable"></tbody>
+  </table>
+
+  <script src="./session19-ex02.js"></script>
+</body>
+</html>
